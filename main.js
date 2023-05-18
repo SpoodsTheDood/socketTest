@@ -23,12 +23,12 @@ function getNewNum(arg){
 function sendClick(arg){
     console.log("clicked by you")
     socket.emit("click")
-    getNewNum()
+    getNewNum(arg)
 }
 
-function reset(){
+function reset(arg){
   console.log("Reset!")
-  getNewNum()
+  getNewNum(arg)
 }
 
 socket.on("connectComplete", (arg) =>{
