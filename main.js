@@ -27,6 +27,7 @@ function sendClick(arg){
 }
 
 function reset(arg){
+  socket.emit("resetClicks")
   console.log("Reset!")
   getNewNum(arg)
 }
@@ -41,6 +42,5 @@ socket.on("someoneClicked", (arg) =>{
 })
 
 socket.on("someoneResetClicks", (arg) =>{
- // socket.emit("resetClicks")
-  getNewNum()
+  getNewNum(arg)
 })
