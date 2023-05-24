@@ -41,6 +41,7 @@ function reset(arg){
 }
 
 function makeName(newName){
+  console.log("Submitted!")
   socket.emit("friendlyNameUpdate", newName)
 }
 
