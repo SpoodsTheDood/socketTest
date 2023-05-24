@@ -18,9 +18,14 @@ document.querySelector("#getNewName").addEventListener('click', function(){
   makeName(newName)
 })
 
-function getNewNum(arg){
-  clickPerson.innerHTML = arg.whoClicked + " clicked!"
-  localCounter = String(arg.clickCount)
+function getNewNum(arg, stringedVers = ""){
+  var splitUpVers = stringedVers.split(",")
+  splitUpVers[0] = splitUpVers[0].substring((splitUpVers[0].indexOf(":") + 1))
+  console.log(splitUpVers[0])
+  splitUpVers[1] = splitUpVers[1].substring(14, (splitUpVers[1].indexOf("}") - 1))
+  console.log(splitUpVers[1])
+  clickPerson.innerHTML = splitUpVers[1] + " clicked!"
+  localCounter = splitUpVers[0]
   clickCount.innerHTML = localCounter
 }
 
@@ -33,7 +38,6 @@ function sendClick(arg){
 function reset(arg){
   socket.emit("resetClicks")
   console.log("Reset!")
-  getNewNum(arg)
 }
 
 function makeName(newName){
@@ -47,9 +51,12 @@ socket.on("connectComplete", (arg) =>{
 
 socket.on("someoneClicked", (arg) =>{
   console.log(arg.whoClicked + " clicked.")
-  getNewNum(arg)
+  var jsonAsString = JSON.stringify(arg)
+  console.log(jsonAsString)
+  getNewNum(arg, jsonAsString)
 })
 
 socket.on("someoneResetClicks", (arg) =>{
-  getNewNum(arg)
+  var jsonAsString = JSON.stringify(arg)
+  getNewNum(arg, jsonAsString)
 })
