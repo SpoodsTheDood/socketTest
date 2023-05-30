@@ -2,19 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Web Socket</title>
   </head>
   
   <body>
+    <div id="clickInfo"></div>
     <h1 id="whoClicked">Who clicked?</h1>
     <p id="countClicks">0</p>
     <button id="theButton">The Button</button>
     <button id="reset">Reset</button>
+  </div>
+<br>
+  <div id="nameMaking"></div>
     <p id="labelNewName">New Name:</p>
     <input type="text" id="inputNewName">
     <button id="getNewName">Submit Name Change</button>
+  </div>
     <script type="module" src="main.js"></script>
   </body>
 </html>
