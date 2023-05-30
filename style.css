@@ -5,13 +5,17 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #443727;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+*{
+  background-color: #443727;
 }
 
 a {
@@ -25,11 +29,8 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #443727;
 }
 
 input{
@@ -52,6 +53,16 @@ h1 {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+#theButton{
+  background-color: #4d4b57;
+  color: #d1bba3;
+}
+
+#reset{
+  background-color: #73846a;
+  color: #ccc1a3;
 }
 
 .logo {
