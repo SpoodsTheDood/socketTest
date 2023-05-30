@@ -47,7 +47,9 @@ h1 {
   line-height: 1.1;
   color: #ceb678;
 }
-
+.hats{
+  display: inline-block;
+}
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -58,6 +60,8 @@ h1 {
 #theButton{
   background-color: #4d4b57;
   color: #d1bba3;
+  margin-left: 5%;
+  margin-right: 12.5%;
 }
 
 #reset{
