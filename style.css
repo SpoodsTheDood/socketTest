@@ -34,12 +34,14 @@ body {
 }
 
 input{
-  background-color:#51474c;
-  color: #deb578;
+  background-color:#546f78;
+  color: #9bb4b1;
 }
 
 p{
-  color: #f7e3b8
+  color: #9d4320;
+  font-size: 30pt;
+  display: inline-block;
 }
 
 h1 {
@@ -67,6 +69,14 @@ h1 {
 #reset{
   background-color: #73846a;
   color: #ccc1a3;
+}
+#countClicks{
+  color: #ab4e24;
+}
+
+#getNewName{
+  background-color: #87735e;
+  color: #fdb47f;
 }
 
 .logo {
