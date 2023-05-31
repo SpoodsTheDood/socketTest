@@ -1,4 +1,5 @@
 import { io } from "socket.io-client"
+import Swal from "sweetalert2"
 
 const socket = io("localhost:3000")
 var clickPerson = document.getElementById("whoClicked")
@@ -60,4 +61,9 @@ socket.on("someoneClicked", (arg) =>{
 socket.on("someoneResetClicks", (arg) =>{
   var jsonAsString = JSON.stringify(arg)
   getNewNum(arg, jsonAsString)
+})
+
+socket.on("successfulChange", () =>{
+  //used sweetalert2 over a standard akert to change css
+  Swal.fire('Name succesfuly changed!')
 })

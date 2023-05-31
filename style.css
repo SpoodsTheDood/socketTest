@@ -49,6 +49,12 @@ h1 {
   line-height: 1.1;
   color: #ceb678;
 }
+
+.swal{
+  background-color: #704f36;
+  color: #b6785f;
+}
+
 .hats{
   display: inline-block;
 }
@@ -57,6 +63,11 @@ h1 {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+#swal2-title{
+  background-color: #661c13;
+  color: #82724d;
 }
 
 #theButton{
