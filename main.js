@@ -65,5 +65,8 @@ socket.on("someoneResetClicks", (arg) =>{
 
 socket.on("successfulChange", () =>{
   //used sweetalert2 over a standard akert to change css
-  Swal.fire('Name succesfuly changed!')
+  Swal.fire({
+    text:'Name succesfuly changed!',
+  confirmButtonColor: '#674f39}'
+})
 })
