@@ -16,6 +16,7 @@
 
 *{
   background-color: #443727;
+  text-align: center;
 }
 
 a {
@@ -28,9 +29,17 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  height: 100%;
   min-width: 320px;
   min-height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+html{
+  height: 100%;
+  display: table;
+  margin: auto;
 }
 
 input{
@@ -50,14 +59,25 @@ h1 {
   color: #ceb678;
 }
 
+.column { width:20em; float:left }
+
 .swal{
   background-color: #704f36;
   color: #b6785f;
 }
 
-.hats{
+.nameMaking{
+  vertical-align:top;
+}
+
+.hatsNButtons{
   display: inline-block;
 }
+
+.mainButtons{
+  display: inline-block;
+}
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -73,8 +93,6 @@ h1 {
 #theButton{
   background-color: #4d4b57;
   color: #d1bba3;
-  margin-left: 5%;
-  margin-right: 12.5%;
 }
 
 #reset{
@@ -88,6 +106,7 @@ h1 {
 #getNewName{
   background-color: #87735e;
   color: #fdb47f;
+  width: 25%;
 }
 
 .logo {
