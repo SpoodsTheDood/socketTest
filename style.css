@@ -36,6 +36,10 @@ body {
   vertical-align: middle;
 }
 
+button{
+  margin-left: 1%;
+}
+
 html{
   height: 100%;
   display: table;
@@ -43,8 +47,8 @@ html{
 }
 
 input{
-  background-color:#546f78;
-  color: #9bb4b1;
+  background-color:#f4f5c9;
+  color: #5c5d29;
 }
 
 p{
@@ -87,12 +91,12 @@ h1 {
 
 #swal2-title{
   background-color: #661c13;
-  color: #82724d;
+  color: #edecca;
 }
 
 #theButton{
   background-color: #4d4b57;
-  color: #d1bba3;
+  color: #edecca;
 }
 
 #reset{
@@ -107,6 +111,10 @@ h1 {
   background-color: #87735e;
   color: #fdb47f;
   width: 25%;
+}
+
+#labelNewName{
+  color: #b5b167;
 }
 
 .logo {
