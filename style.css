@@ -16,6 +16,7 @@
 
 *{
   background-color: #443727;
+  text-align: center;
 }
 
 a {
@@ -28,14 +29,26 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  height: 100%;
   min-width: 320px;
   min-height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+button{
+  margin-left: 1%;
+}
+
+html{
+  height: 100%;
+  display: table;
+  margin: auto;
 }
 
 input{
-  background-color:#546f78;
-  color: #9bb4b1;
+  background-color:#f4f5c9;
+  color: #5c5d29;
 }
 
 p{
@@ -49,7 +62,22 @@ h1 {
   line-height: 1.1;
   color: #ceb678;
 }
-.hats{
+
+.column { width:20em; float:left }
+
+.swal{
+  background-color: #704f36;
+  color: #b6785f;
+}
+
+.nameMaking{
+  vertical-align:top;
+}
+
+.hatsNButtons{
+  display: inline-block;
+}
+.mainButtons{
   display: inline-block;
 }
 html{
@@ -62,11 +90,14 @@ html{
   text-align: center;
 }
 
+#swal2-title{
+  background-color: #661c13;
+  color: #edecca;
+}
+
 #theButton{
   background-color: #4d4b57;
-  color: #d1bba3;
-  margin-left: 5%;
-  margin-right: 12.5%;
+  color: #edecca;
 }
 
 #reset{
@@ -80,6 +111,11 @@ html{
 #getNewName{
   background-color: #87735e;
   color: #fdb47f;
+  width: 25%;
+}
+
+#labelNewName{
+  color: #b5b167;
 }
 
 .logo {

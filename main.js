@@ -1,8 +1,10 @@
 import { io } from "socket.io-client"
+import Swal from "sweetalert2"
 
 
-//HTML Elements that can be changed
-const socket = io("localhost:3000")
+const NotAnIP = String(import.meta.env.VITE_NOT_AN_IP)
+const socket = io(NotAnIP)
+console.log(NotAnIP)
 var clickPerson = document.getElementById("whoClicked")
 var clickCount = document.getElementById("countClicks")
 var localCounter = 0
@@ -61,4 +63,12 @@ socket.on("someoneClicked", (arg) =>{
 socket.on("someoneResetClicks", (arg) =>{
   var jsonAsString = JSON.stringify(arg)
   getNewNum(arg, jsonAsString)
+})
+
+socket.on("successfulChange", () =>{
+  //used sweetalert2 over a standard akert to change css
+  Swal.fire({
+    text:'Name succesfuly changed!',
+  confirmButtonColor: '#674f39}'
+})
 })
