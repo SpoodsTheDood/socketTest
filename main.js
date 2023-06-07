@@ -1,7 +1,9 @@
 import { io } from "socket.io-client"
 import Swal from "sweetalert2"
 
-const socket = io("localhost:3000")
+const NotAnIP = String(import.meta.env.VITE_NOT_AN_IP)
+const socket = io(NotAnIP)
+console.log(NotAnIP)
 var clickPerson = document.getElementById("whoClicked")
 var clickCount = document.getElementById("countClicks")
 var localCounter = 0
