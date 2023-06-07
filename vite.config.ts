@@ -2,7 +2,7 @@ const path = require('path')
 
 export default {
   root: path.resolve(__dirname, 'src'),
-  base: 'https://github.com/SpoodsTheDood/socketTest',
+  base: 'https://SpoodsTheDood.github.io/socketTest',
   build: {
     outDir: '../dist'
   },
